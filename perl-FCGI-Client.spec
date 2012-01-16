@@ -8,13 +8,13 @@
 Summary:	FCGI::Client - client library for fastcgi protocol
 #Summary(pl.UTF-8):	
 Name:		perl-FCGI-Client
-Version:	0.06
+Version:	0.08
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/FCGI/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	149de5b06e1338ef5743ff69dd4dc2f4
+# Source0-md5:	c69973d1db970bba4f7a9600b9bbb0f7
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/FCGI-Client/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -27,8 +27,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 FCGI::Client is client library for fastcgi protocol.
-
-
 
 # %description -l pl.UTF-8
 # TODO
