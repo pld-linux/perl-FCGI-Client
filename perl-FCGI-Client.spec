@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	FCGI
 %define		pnam	Client
 %include	/usr/lib/rpm/macros.perl
 Summary:	FCGI::Client - client library for fastcgi protocol
-#Summary(pl.UTF-8):	
 Name:		perl-FCGI-Client
 Version:	0.08
 Release:	1
@@ -16,20 +15,18 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/FCGI/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c69973d1db970bba4f7a9600b9bbb0f7
 # generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/FCGI-Client/
+URL:		http://search.cpan.org/dist/FCGI-Client/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Any-Moose >= 0.13
+BuildRequires:	perl-Mouse
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 FCGI::Client is client library for fastcgi protocol.
-
-# %description -l pl.UTF-8
-# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -43,7 +40,6 @@ FCGI::Client is client library for fastcgi protocol.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
