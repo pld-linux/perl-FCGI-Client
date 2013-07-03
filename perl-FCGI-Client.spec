@@ -8,7 +8,7 @@
 Summary:	FCGI::Client - client library for fastcgi protocol
 Name:		perl-FCGI-Client
 Version:	0.08
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
