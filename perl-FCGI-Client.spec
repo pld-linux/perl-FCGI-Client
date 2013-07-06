@@ -13,10 +13,10 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/FCGI/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOKUHIROM/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f039f3c4a8e2bc370a20f24f1537afc1
 # generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/FCGI-Client/
+URL:		http://search.cpan.org/dist/FCGI-Client/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
