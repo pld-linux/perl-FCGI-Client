@@ -9,7 +9,7 @@ Summary:	FCGI::Client - client library for fastcgi protocol
 #Summary(pl.UTF-8):	
 Name:		perl-FCGI-Client
 Version:	0.04
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -23,6 +23,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-Any-Moose >= 0.10
 BuildRequires:	perl-Try-Tiny
 %endif
+Requires:	perl-dirs >= 5-5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
