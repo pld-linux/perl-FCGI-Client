@@ -4,7 +4,6 @@
 
 %define		pdir	FCGI
 %define		pnam	Client
-%include	/usr/lib/rpm/macros.perl
 Summary:	FCGI::Client - client library for fastcgi protocol
 Name:		perl-FCGI-Client
 Version:	0.09
