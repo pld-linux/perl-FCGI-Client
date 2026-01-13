@@ -8,7 +8,7 @@ Summary:	FCGI::Client - client library for FastCGI protocol
 Summary(pl.UTF-8):	FCGI::Client - biblioteka kliencka do protokołu FastCGI
 Name:		perl-FCGI-Client
 Version:	0.09
-Release:	1
+Release:	2
 # same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
